@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> CodeClub Currency Convert </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;800&family=Open+Sans:wght@400;700&family=Poppins&family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe7c118f95.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-money-bill-transfer"></i> CURRENCY CONVERTER</h1>
+        </header>
+        <main>
+            <div class="data-converter">
+                <select>
+                    <option>
+                         R$ Real Brasileiro
+                    </option>
+                    
+                </select>
+                <i id="arrow-right-left" class="fa-solid fa-right-left"></i>
+                <select id="currency-select">
+                    <option>
+                        US$ American Dolar
+                    </option><br>
+                    <option>
+                        € Euro
+                    </option><br>
+                    <option>
+                        Bitcoin
+                    </option>
+                </select>
+            </div>
+        </main>
+        
+        <div><!-- Quantidade a ser convertida e botao -->
+            <div class="money-input">
+                
+                    
+                    <input type="text" id="value-exchange" class="input" placeholder="   ">
+                    <label for="value-exchange" class="placeholder"> Amount:</label>
+                
+                <button id="convert-button" type="button"><i class="fa-solid fa-circle-right"></i></button>
+            </div>
+        </div>
+
+        <section class="result">
+            <div > 
+
+                <div class="currency-container">
+                    <img src="./assets/image/brasil.png" alt="bandeira-brasil">
+                    <p class="currency-name" id="currency-name">Real</p>
+                    <p class="exchange-value" id="real-to-exchange-text"> R$ </p>
+                </div>
+
+                <i id="setabaixo" class="fa-solid fa-circle-arrow-down"></i>
+                <div class="currency-container">
+                    <img src="./assets/image/usa.png" id="currency-img" alt="bandeiras-paises-conversao">
+                    <p class="currency-name" id="currency-name-exchange">American Dolar</p>
+                    <p class="exchange-value" id="dolar-exchange"> US$ </p>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</body>
+<script src="./script.js"> </script>
+
+</html>
